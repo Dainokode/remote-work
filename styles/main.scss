@@ -1,0 +1,68 @@
+// imports
+@import "./utility";
+
+// Basic styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// header
+header {
+  min-height: 100vh;
+  background: url("/images/pexels-daria-shevtsova-3277932\ 1-min.jpg") no-repeat
+    center center/cover;
+
+  // navbar
+  .navbar {
+    padding: 1rem;
+    @include flex(space-between, row);
+
+    img {
+      width: 160px;
+      margin-top: 1.8rem;
+    }
+
+    // ul, li & a tags styles
+    ul {
+      @include flex(space-between, row);
+    }
+
+    li {
+      padding: 1.5rem;
+    }
+
+    a {
+      color: #fff;
+      font-size: 18px;
+
+      &:hover {
+        border-bottom: 3px solid #ed455d;
+      }
+    }
+
+    .btn-ghost {
+      border: 1px solid #ed455d;
+      padding: 0.6rem;
+      border-radius: 5px;
+
+      &:hover {
+        background: #ed455d;
+      }
+    }
+  }
+}
