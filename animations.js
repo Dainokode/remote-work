@@ -24,3 +24,18 @@ window.onload = () => {
   }
  })
 }
+
+const learnMore = document.querySelectorAll(".learn-more");
+const arrow = document.querySelectorAll(".arrow");
+
+learnMore.forEach(item => {
+ item.addEventListener("mouseover", () => {
+  arrow.forEach(arrow => {
+   arrow.style.marginLeft = "1rem";
+   
+   setTimeout(() => {
+    arrow.style.marginLeft = "0";
+   }, 500)
+  })
+ })
+})
