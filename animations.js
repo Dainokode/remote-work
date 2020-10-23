@@ -14,7 +14,7 @@ window.onload = () => {
  })
 
  window.addEventListener("scroll", () => {
-  if(window.scrollY > 1400){
+  if(window.scrollY > 1500){
    photoLeft.style.opacity = "1";
    photoLeft.style.transform = "translateX(0)";
    photoLeft.style.transition = "1.5s ease";
